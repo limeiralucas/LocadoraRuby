@@ -6,7 +6,11 @@ class Lease
 		@isPaid = false
 	end
 
-	def pay
+	def pay()
 		@isPaid = true
+	end
+
+	def to_s()
+		"##{id} User: #{user_id}:#{@users[user_id].name} #{timestamp} | #{isPaid ? "Paid" : "Pending"}"
 	end
 end

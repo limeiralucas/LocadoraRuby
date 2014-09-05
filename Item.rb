@@ -7,4 +7,10 @@ class Item
 		@genre = genre
 		@avaliable = avaliable
 	end
+	def to_s()
+		"Item ##{id}\n
+		Name: #{name}\n
+		Year: #{year}\n
+		Avaliable: #{avaliable ? "Yes" : "No" }\n"
+	end
 end

@@ -10,4 +10,12 @@ class User
 		@telephone = telephone
 		@address = address
 	end
+
+	def to_s()
+		"User ##{id}\n
+		Name: #{name.capitalize} #{last_name.capitalize}\n
+		CPF: #{cpf}\n
+		Telephone: #{telephone}\n
+		Address: #{address}\n"
+	end
 end
