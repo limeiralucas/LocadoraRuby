@@ -1,5 +1,5 @@
 class Item
-	attr_reader :name, :id
+	attr_reader :name, :id, :year, :genre, :avaliable
 	def initialize(id, name, year, genre, avaliable)
 		@id = id
 		@name = name

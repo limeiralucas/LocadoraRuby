@@ -1,6 +1,7 @@
 require_relative "Item"
 
 class Game < Item
+	attr_reader :genre, :developer, :platform, :publisher
 	def initialize(id, name, year, genre, avaliable, developer, platform, publisher)
 		@developer = developer
 		@platform = platform
@@ -11,6 +12,7 @@ class Game < Item
 		"Game ##{id}\n
 		Name: #{name}\n
 		Year: #{year}\n
+		Genre: #{genre}\n
 		Developer: #{developer}\n
 		Platform: #{platform}\n
 		Publisher: #{publisher}\n

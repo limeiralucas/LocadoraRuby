@@ -1,7 +1,8 @@
 require_relative "Menus"
 require_relative "Game"
 
-@itens = []
+@itens = {}
+@leases = {}
 @users = {}
 @quit = false
 

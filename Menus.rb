@@ -1,16 +1,17 @@
 def leaseMenu()
 	system "clear"
-	@itens.each do |item|
-		puts "#{item.id}: #{item.name}"
+	@leases.each do |id, lease|
+		puts "#{id}: #{lease.name}"
 	end
 	puts "\nItem Number: "
 	lease_num = gets.chomp()
+	puts @leases[lease_num.to_i].to_s
 end
 
 def itemMenu()
 	system "clear"
-	@itens.each do |item|
-		puts "#{item.id}: #{item.name}"
+	@itens.each do |id, item|
+		puts "#{id}: #{item.name}"
 	end
 	puts "\n1: Show Item"
 	puts "2: Lease "
@@ -21,6 +22,8 @@ def itemMenu()
 	when 1 then
 		puts "Item Number: "
 		item_num = gets.chomp()
+		puts @itens[item_num.to_i].to_s
+		gets
 	when 2 then
 		leaseMenu()
 	else
