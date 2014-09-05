@@ -1,11 +1,11 @@
 class Item
 	attr_reader :name, :id, :year, :genre, :avaliable
-	def initialize(id, name, year, genre, avaliable)
+	def initialize(id, name, year, genre)
 		@id = id
 		@name = name
 		@year = year
 		@genre = genre
-		@avaliable = avaliable
+		@avaliable = true
 	end
 	def to_s()
 		"Item ##{id}\n

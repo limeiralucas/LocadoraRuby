@@ -1,6 +1,7 @@
 require_relative "Menus"
 require_relative "Game"
 
+@item_count = 0
 @itens = {}
 @leases = {}
 @users = {}
