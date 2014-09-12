@@ -1,12 +1,12 @@
 require_relative "Item"
 
 class Game < Item
-	attr_reader :genre, :developer, :platform, :publisher
-	def initialize(id, name, year, genre, avaliable, developer, platform, publisher)
+	attr_reader :genre, :developer, :platform, :publisher, :avaliable
+	def initialize(id, name, year, genre, developer, platform, publisher)
 		@developer = developer
 		@platform = platform
 		@publisher = publisher
-		super(id, name, year, genre, avaliable)
+		super(id, name, year, genre)
 	end
 	def to_s()
 		"Game ##{id}\n

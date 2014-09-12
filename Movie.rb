@@ -5,7 +5,7 @@ class Movie < Item
 	def initialize(id, name, year, genre, director, imdb_rating)
 		@director = director
 		@imdb_rating = imdb_rating
-		super(id, name, year, genre, avaliable)
+		super(id, name, year, genre)
 	end
 	def to_s()
 		"Movie ##{id}\n

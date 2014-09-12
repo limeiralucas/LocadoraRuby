@@ -1,5 +1,6 @@
 class Lease
-	def initialize(id, timestamp, user_id, item_id, isPaid)
+	attr_reader :id, :user_id, :item_id
+	def initialize(id, user_id, item_id)
 		@id = id
 		@timestamp = Time.new
 		@user_id = user_id

@@ -13,4 +13,12 @@ class Item
 		Year: #{year}\n
 		Avaliable: #{avaliable ? "Yes" : "No" }\n"
 	end
+
+	def lease()
+		@avaliable = false
+	end
+
+	def unlease()
+		@avaliable = true
+	end
 end

@@ -1,6 +1,6 @@
 class User
 
-	attr_reader :name, 
+	attr_reader :name, :last_name, :cpf, :telephone, :address
 
 	def initialize(id, name, last_name, cpf, telephone, address)
 		@id = id
