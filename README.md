@@ -1,3 +1,5 @@
+[![Stories in Ready](https://badge.waffle.io/IMD-UFRN/OpenRes.png?label=ready)](https://waffle.io/lucasalveslm/LocadoraRuby)
+
 LocadoraRuby
 ============
 
